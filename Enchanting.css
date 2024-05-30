@@ -1,0 +1,741 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: rgba(254, 215, 186, 1);
+}
+
+nav {
+	height: 10vh;
+	display: flex;
+	width: 100%;
+}
+
+.menu {
+	display: none;
+}
+
+ul {
+	display: flex;
+}
+
+nav li {
+	padding-top: 14px;
+	padding-left: 26px;
+	margin: 6px;
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	font-family: 'Poppins';
+	transition: all 1s ease-in;
+}
+
+nav a:hover {
+	cursor: pointer;
+	color: grey;
+}
+
+nav .img1 {
+	position: absolute;
+	left: 44%;
+	width: 190px;
+	height: 40px;
+	padding-top: 12px;
+}
+
+nav .right {
+	position: absolute;
+	right: 3%;
+	width: 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 12px;
+}
+
+nav .right img {
+	width: 20px;
+	height: 20px;
+}
+
+nav .right .cart {
+	margin-top: 8px;
+}
+
+nav .right h3 {
+	border-radius: 100%;
+	background-color: brown;
+	width: 40px;
+	height: 37px;
+	padding: 2px;
+	text-align: center;
+	font-family: 'Poppins';
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.container2 {
+	background-image: url('enchant1.png');
+	background-size: 100% 100%;
+	height: 87vh;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.container3 {
+	background-image: url('enchant3.png');
+	background-size: 100% 100%;
+	height: 72vh;
+	text-align: center;
+	padding: 30px;
+}
+
+.container3 h1 {
+	font-family: cursive;
+	color: #7D0849;
+}
+
+.container3 img {
+	margin: 20px;
+	width: 28%;
+}
+
+.container3 p,
+.container3 h3 {
+	color: grey;
+	font-family: 'Nunito Sans';
+	margin: 10px;
+}
+
+.container3 form {
+	margin: 30px;
+}
+
+.container3 input,
+.container3 select {
+	padding: 20px;
+	margin: 10px;
+	width: 25%;
+}
+
+.container3 input[type="submit"] {
+	background-color: #851753;
+	border: none;
+	border-radius: 4px;
+	font-size: 18px;
+	color: white;
+}
+
+.container4 {
+	height: 72vh;
+	background-image: url('enchant3.png');
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+.container4 hr {
+	border: 1px solid rgb(216, 188, 150);
+}
+
+.container4 h1 {
+	padding: 15px;
+	padding-top: 50px;
+	color: #7D0849;
+	font-family: cursive;
+}
+
+.container4 p {
+	color: grey;
+	font-family: 'Nunito Sans';
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	padding: 20px;
+}
+
+.container5 {
+	height: 45vh;
+	background-color: rgba(217, 217, 217, 1);
+}
+
+.container5 .details {
+	display: flex;
+	padding: 20px;
+	justify-content: space-around;
+}
+
+.container5 .details h3 {
+	color: rgba(139, 0, 0, 1);
+	font-weight: bold;
+	font-family: 'Nunito Sans';
+	margin: 10px;
+}
+
+.container5 .details p {
+	font-family: 'Nunito Sans';
+	padding: 2px;
+}
+
+.container5 .details a {
+	text-decoration: none;
+	color: black
+}
+
+.container5 .details .img {
+	display: flex;
+	gap: 8px;
+	margin-top: 8px;
+}
+
+.container5 .details img {
+	width: 20px;
+	height: 20px;
+	margin-top: 5px;
+}
+
+.container5 .logos {
+	display: flex;
+	justify-content: center;
+	margin-top: 38px;
+	gap: 25px;
+}
+
+.container5 .logos h3 {
+	color: rgba(139, 0, 0, 1);
+	font-family: 'Nunito Sans';
+}
+
+.container6 {
+	height: 8vh;
+}
+
+.container6 h4 {
+	text-align: center;
+	font-family: 'Nunito Sans';
+	color: rgba(139, 0, 0, 1);
+	padding-top: 16px;
+}
+
+/* USING MEDIA QUERIES FOR MOBILE*/
+@media only screen and (min-width:481px) and (max-width:767px) {
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	body {
+		background-color: rgba(254, 215, 186, 1);
+		position: relative;
+	}
+
+	nav {
+		height: 10vh;
+		display: flex;
+		width: 100%;
+	}
+
+	.menu {
+		display: block;
+		position: absolute;
+		left: 14px;
+		top: 14px;
+	}
+
+	.menu .div {
+		width: 30px;
+		height: 2px;
+		background-color: black;
+		margin: 6px 0;
+	}
+
+	.leftnav {
+		display: none;
+		background-color: white;
+		height: 100%;
+		position: fixed;
+		top: 0px;
+		width: 29%;
+		z-index: 1;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+		margin: 54px 5px;
+	}
+
+	nav li {
+		padding-top: 14px;
+		padding-left: 4px;
+		margin: 6px;
+		list-style: none;
+		font-size: 14px;
+	}
+
+	nav a {
+		text-decoration: none;
+		font-weight: bold;
+		color: black;
+		font-family: 'Poppins';
+		transition: all 1s ease-in;
+	}
+
+	nav a:hover {
+		cursor: pointer;
+		color: grey;
+	}
+
+	nav .img1 {
+		position: absolute;
+		left: 10vw;
+		width: 170px;
+		height: 30px;
+		padding-top: 14px;
+	}
+
+	nav .right {
+		position: absolute;
+		right: 7.5%;
+		width: 10%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 12px;
+		gap: 2vw;
+	}
+
+	nav .right img {
+		width: 15px;
+		height: 15px;
+		margin-top: 2px;
+	}
+
+	nav .right .cart {
+		margin-top: 6px;
+	}
+
+	nav .right h3 {
+		border-radius: 100%;
+		background-color: brown;
+		width: 30px;
+		height: 30px;
+		padding: 1px 3px;
+		padding-bottom: 2px;
+		text-align: center;
+		font-family: 'Poppins';
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.container2 {
+		background-image: url('enchant1.png');
+		background-size: 100% 100%;
+		height: 50vh;
+		width: 99.8vw;
+		margin: 0px;
+		margin-top: 10px;
+	}
+
+	.container3 {
+		background-image: url('enchant3.png');
+		background-size: 100% 100%;
+		height: 80vh;
+		text-align: center;
+		padding: 30px;
+	}
+
+	.container3 h1 {
+		font-family: cursive;
+		color: #7D0849;
+		font-size: 22px;
+	}
+
+	.container3 img {
+		margin: 10px;
+		width: 60%;
+	}
+
+	.container3 p,
+	.container3 h3 {
+		color: grey;
+		font-family: 'Nunito Sans';
+		margin: 8px;
+	}
+
+	.container3 form {
+		margin: 20px;
+	}
+
+	.container3 input,
+	.container3 select {
+		padding: 10px;
+		margin: 10px 8px;
+		width: 40%;
+	}
+
+	.container3 input[type="submit"] {
+		background-color: #851753;
+		border: none;
+		border-radius: 4px;
+		font-size: 18px;
+		color: white;
+	}
+
+	.container4 {
+		height: 90vh;
+		background-image: url('enchant3.png');
+		background-size: 100% 100%;
+		text-align: center;
+	}
+
+	.container4 hr {
+		border: 1px solid rgb(216, 188, 150);
+	}
+
+	.container4 h1 {
+		padding: 8px 15px;
+		padding-top: 20px;
+		color: #7D0849;
+		font-family: cursive;
+		font-size: 22px;
+	}
+
+	.container4 img {
+		width: 40%;
+	}
+
+	.container4 p {
+		color: grey;
+		font-family: 'Nunito Sans';
+		width: 80%;
+		text-align: center;
+		margin: auto;
+		font-size: 14px;
+	}
+
+	.container5 {
+		height: 61vh;
+		margin-top: 35px;
+		padding: 8px 2px;
+		background-color: rgba(217, 217, 217, 1);
+	}
+
+	.container5.details {
+		display: flex;
+		padding: 4px;
+		justify-content: space-around;
+	}
+
+	.container5 .details h3 {
+		color: rgba(139, 0, 0, 1);
+		font-family: 'Nunito Sans';
+		margin: 5px;
+		font-size: 14px;
+	}
+
+	.container5 .details p {
+		font-family: 'Nunito Sans';
+		padding: 2px;
+		font-size: 12px;
+	}
+
+	.container5 .details a {
+		text-decoration: none;
+		color: black;
+	}
+
+	.container5 .details .img {
+		display: flex;
+		gap: 4px;
+		margin-top: 8px;
+	}
+
+	.container5 .details img {
+		width: 15px;
+		height: 15px;
+		margin-top: 5px;
+	}
+
+	.container5 .logos {
+		display: flex;
+		justify-content: center;
+		gap: 18px;
+		position: absolute;
+		bottom: 2.8%;
+		width: 100vw;
+	}
+
+	.container5 .logos img {
+		width: 18px;
+		height: 18px;
+	}
+
+	.container5 .logos h3 {
+		color: rgba(139, 0, 0, 1);
+		font-family: 'Nunito Sans';
+		font-size: 14px;
+	}
+
+	.container6 {
+		height: 8vh;
+	}
+
+	.container6 h4 {
+		text-align: center;
+		font-family: 'Nunito Sans';
+		color: rgba(139, 0, 0, 1);
+		padding-top: 10px;
+		font-size: 14px;
+		font-weight: normal;
+	}
+}
+
+
+/* USING MEDIA QUERIES FOR TABLET*/
+@media only screen and (min-width:768px) and (max-width:991px) {
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	body {
+		background-color: rgba(254, 215, 186, 1);
+		position: relative;
+	}
+
+	nav {
+		height: 10vh;
+		display: flex;
+		width: 100%;
+	}
+
+	nav li {
+		padding-top: 10px;
+		padding-left: 20px;
+		margin: 4px 6px;
+		list-style: none;
+		font-size: 14px;
+	}
+
+	nav a {
+		text-decoration: none;
+		font-weight: bold;
+		color: black;
+		font-family: 'Poppins';
+		transition: all 1s ease-in;
+	}
+
+	nav a:hover {
+		cursor: pointer;
+		color: grey;
+	}
+
+	nav .img1 {
+		position: absolute;
+		left: 42%;
+		width: 180px;
+		height: 30px;
+		padding-top: 8px;
+	}
+
+	nav .right {
+		position: absolute;
+		right: 4.3%;
+		width: 10%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 5px;
+		gap: 2vw;
+	}
+
+	nav .right img {
+		width: 18px;
+		height: 18px;
+	}
+
+	nav .right .cart {
+		margin-top: 9px;
+	}
+
+	nav .right h3 {
+		border-radius: 100%;
+		background-color: brown;
+		width: 30px;
+		height: 30px;
+		padding: 1px 3px;
+		text-align: center;
+		font-family: 'Poppins';
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.container2 {
+		background-image: url('enchant1.png');
+		background-size: 100% 100%;
+		height: 87vh;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.container3 {
+		background-image: url('enchant3.png');
+		background-size: 100% 100%;
+		height: 88vh;
+		text-align: center;
+		padding: 30px;
+	}
+
+	.container3 h1 {
+		font-family: cursive;
+		color: #7D0849;
+		font-size: 24px;
+	}
+
+	.container3 img {
+		margin: 10px;
+		width: 28%;
+	}
+
+	.container3 p,
+	.container3 h3 {
+		color: grey;
+		font-family: 'Nunito Sans';
+		margin: 10px;
+	}
+
+	.container3 form {
+		margin: 15px;
+	}
+
+	.container3 input,
+	.container3 select {
+		padding: 15px 20px;
+		margin: 10px;
+		width: 25%;
+	}
+
+	.container3 input[type="submit"] {
+		background-color: #851753;
+		border: none;
+		border-radius: 4px;
+		font-size: 18px;
+		color: white;
+	}
+
+	.container4 {
+		height: 105vh;
+		background-image: url('enchant3.png');
+		background-size: 100% 100%;
+		text-align: center;
+	}
+
+	.container4 hr {
+		border: 1px solid rgb(216, 188, 150);
+	}
+
+	.container4 h1 {
+		padding: 15px;
+		padding-top: 30px;
+		color: #7D0849;
+		font-family: cursive;
+		font-size: 24px;
+	}
+
+	.container4 img {
+		margin: 6px;
+		width: 22%;
+	}
+
+	.container4 p {
+		color: grey;
+		font-family: 'Nunito Sans';
+		width: 50%;
+		text-align: center;
+		margin: auto;
+		padding: 10px;
+		font-size: 14px;
+	}
+
+	.container5 {
+		height: 55vh;
+		background-color: rgba(217, 217, 217, 1);
+	}
+
+	.container5 .details {
+		display: flex;
+		padding: 10px 20px;
+		justify-content: space-around;
+	}
+
+	.container5 .details h3 {
+		color: rgba(139, 0, 0, 1);
+		font-weight: bold;
+		font-family: 'Nunito Sans';
+		margin: 10px 6px;
+		font-size: 15px;
+	}
+
+	.container5 .details p {
+		font-family: 'Nunito Sans';
+		padding: 2px;
+		font-size: 12px;
+	}
+
+	.container5 .details a {
+		text-decoration: none;
+		color: black
+	}
+
+	.container5 .details .img {
+		display: flex;
+		gap: 8px;
+		margin-top: 8px;
+	}
+
+	.container5 .details img {
+		width: 16px;
+		height: 16px;
+		margin-top: 5px;
+	}
+
+	.container5 .logos {
+		display: flex;
+		justify-content: center;
+		gap: 22px;
+		position: absolute;
+		bottom: 2.5%;
+		width: 100vw;
+	}
+
+	.container5 .logos img {
+		width: 18px;
+		height: 18px;
+	}
+
+	.container5 .logos h3 {
+		color: rgba(139, 0, 0, 1);
+		font-family: 'Nunito Sans';
+		font-size: 16px;
+	}
+
+	.container6 {
+		height: 8vh;
+	}
+
+	.container6 h4 {
+		text-align: center;
+		font-family: 'Nunito Sans';
+		color: rgba(139, 0, 0, 1);
+		padding-top: 10px;
+		font-size: 14px;
+		font-weight: normal;
+	}
+}

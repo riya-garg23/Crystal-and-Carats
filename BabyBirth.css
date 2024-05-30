@@ -1,0 +1,650 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: rgba(254, 215, 186, 1);
+}
+
+nav {
+	height: 10vh;
+	display: flex;
+	width: 100%;
+}
+
+.menu {
+	display: none;
+}
+
+ul {
+	display: flex;
+}
+
+nav li {
+	padding-top: 14px;
+	padding-left: 26px;
+	margin: 6px;
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+	font-family: 'Poppins';
+	transition: all 1s ease-in;
+}
+
+nav a:hover {
+	cursor: pointer;
+	color: grey;
+}
+
+nav .img1 {
+	position: absolute;
+	left: 44%;
+	width: 190px;
+	height: 40px;
+	padding-top: 12px;
+}
+
+nav .right {
+	position: absolute;
+	right: 3%;
+	width: 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 12px;
+}
+
+nav .right img {
+	width: 20px;
+	height: 20px;
+}
+
+nav .right .cart {
+	margin-top: 8px;
+}
+
+nav .right h3 {
+	border-radius: 100%;
+	background-color: brown;
+	width: 40px;
+	height: 37px;
+	padding: 2px;
+	text-align: center;
+	font-family: 'Poppins';
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.container2 {
+	height: 200vh;
+	padding: 20px;
+}
+
+.container2 .images1 {
+	padding: 20px;
+}
+
+.container2 .img {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 30px;
+}
+
+.container2 .img .imgg {
+	height: 180px;
+	width: 180px;
+	border: 1px solid black;
+	background-color: rgba(217, 217, 217, 1);
+	padding: 38px 25px;
+	padding-right: 40px;
+	padding-bottom: 50px;
+}
+
+.container2 .img img {
+	height: 165px;
+	width: 165px;
+	margin-left: 15px;
+}
+
+.container2 .img p {
+	text-align: center;
+	font-family: 'Poppins';
+	color: rgba(75, 4, 166, 1);
+	margin: 20px;
+}
+
+.container2 .card {
+	width: 450px;
+	height: 260px;
+	border: 1px solid black;
+	background-color: rgba(214, 203, 203, 1);
+	padding: 10px 60px;
+	border-radius: 25px;
+}
+
+.container2 .card .img2 {
+	position: absolute;
+	width: 570px;
+	height: 280px;
+	position: relative;
+	bottom: 4%;
+	right: 16.6%;
+	overflow: hidden;
+	border-radius: 24px;
+}
+
+.container3 {
+	height: 45vh;
+	background-color: rgba(217, 217, 217, 1);
+}
+
+.container3 .details {
+	display: flex;
+	padding: 20px;
+	justify-content: space-around;
+}
+
+.container3 .details h3 {
+	color: rgba(139, 0, 0, 1);
+	font-weight: bold;
+	font-family: 'Nunito Sans';
+	margin: 10px;
+}
+
+.container3 .details p {
+	font-family: 'Nunito Sans';
+	padding: 2px;
+}
+
+.container3 .details a {
+	text-decoration: none;
+	color: black
+}
+
+.container3 .details .img {
+	display: flex;
+	gap: 8px;
+	margin-top: 8px;
+}
+
+.container3 .details img {
+	width: 20px;
+	height: 20px;
+	margin-top: 5px;
+}
+
+.container3 .logos {
+	display: flex;
+	justify-content: center;
+	margin-top: 38px;
+	gap: 25px;
+}
+
+.container3 .logos h3 {
+	color: rgba(139, 0, 0, 1);
+	font-family: 'Nunito Sans';
+}
+
+.container4 {
+	height: 8vh;
+}
+
+.container4 h4 {
+	text-align: center;
+	font-family: 'Nunito Sans';
+	color: rgba(139, 0, 0, 1);
+	padding-top: 16px;
+}
+
+
+/* USING MEDIA QUERIES FOR MOBILE*/
+@media only screen and (min-width:481px) and (max-width:767px) {
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	body {
+		background-color: rgba(254, 215, 186, 1);
+		position: relative;
+	}
+
+	nav {
+		height: 10vh;
+		display: flex;
+		width: 100%;
+	}
+
+	.menu {
+		display: block;
+		position: absolute;
+		left: 14px;
+		top: 14px;
+	}
+
+	.menu .div {
+		width: 30px;
+		height: 2px;
+		background-color: black;
+		margin: 6px 0;
+	}
+
+	.leftnav {
+		display: none;
+		background-color: white;
+		height: 100%;
+		position: fixed;
+		top: 0px;
+		width: 29%;
+		z-index: 1;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+		margin: 54px 5px;
+	}
+
+	nav li {
+		padding-top: 14px;
+		padding-left: 4px;
+		margin: 6px;
+		list-style: none;
+		font-size: 14px;
+	}
+
+	nav a {
+		text-decoration: none;
+		font-weight: bold;
+		color: black;
+		font-family: 'Poppins';
+		transition: all 1s ease-in;
+	}
+
+	nav a:hover {
+		cursor: pointer;
+		color: grey;
+	}
+
+	nav .img1 {
+		position: absolute;
+		left: 10vw;
+		width: 170px;
+		height: 30px;
+		padding-top: 14px;
+	}
+
+	nav .right {
+		position: absolute;
+		right: 7.5%;
+		width: 10%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 12px;
+		gap: 2vw;
+	}
+
+	nav .right img {
+		width: 15px;
+		height: 15px;
+		margin-top: 2px;
+	}
+
+	nav .right .cart {
+		margin-top: 6px;
+	}
+
+	nav .right h3 {
+		border-radius: 100%;
+		background-color: brown;
+		width: 30px;
+		height: 30px;
+		padding: 1px 3px;
+		padding-bottom: 2px;
+		text-align: center;
+		font-family: 'Poppins';
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.container2 {
+		height: 372vh;
+		padding: 20px 0px;
+	}
+
+	.container2 .images1 {
+		padding: 0px;
+	}
+
+	.container2 .img {
+		display: grid;
+		grid-template-columns: 160px 160px;
+		justify-content: space-around;
+		margin: 0px;
+		padding-right: 6.5vw;
+	}
+
+	.container2 .img .imgg {
+		height: 160px;
+		width: 160px;
+		background-color: rgba(217, 217, 217, 1);
+		padding: 20px 28px 30px 10px;
+		margin-bottom: 30px;
+	}
+
+	.container2 .img img {
+		height: 150px;
+		width: 150px;
+		margin-left: 15px;
+	}
+
+	.container2 .img p {
+		text-align: center;
+		font-family: 'Poppins';
+		color: rgba(75, 4, 166, 1);
+		margin: 10px;
+		font-size: 12px;
+	}
+
+	.container2 .card {
+		display: none;
+	}
+
+	.container3 {
+		height: 61vh;
+		margin-top: 35px;
+		padding: 8px 2px;
+		background-color: rgba(217, 217, 217, 1);
+	}
+
+	.container3 .details {
+		display: flex;
+		padding: 4px;
+		justify-content: space-around;
+	}
+
+	.container3 .details h3 {
+		color: rgba(139, 0, 0, 1);
+		font-family: 'Nunito Sans';
+		margin: 5px;
+		font-size: 14px;
+	}
+
+	.container3 .details p {
+		font-family: 'Nunito Sans';
+		padding: 2px;
+		font-size: 12px;
+	}
+
+	.container3 .details a {
+		text-decoration: none;
+		color: black;
+	}
+
+	.container3 .details .img {
+		display: flex;
+		gap: 4px;
+		margin-top: 8px;
+	}
+
+	.container3 .details img {
+		width: 15px;
+		height: 15px;
+		margin-top: 5px;
+	}
+
+	.container3 .logos {
+		display: flex;
+		justify-content: center;
+		gap: 18px;
+		position: absolute;
+		bottom: 2%;
+		width: 100vw;
+	}
+
+	.container3 .logos img {
+		width: 18px;
+		height: 18px;
+	}
+
+	.container3 .logos h3 {
+		color: rgba(139, 0, 0, 1);
+		font-family: 'Nunito Sans';
+		font-size: 14px;
+	}
+
+	.container4 {
+		height: 8vh;
+	}
+
+	.container4 h4 {
+		text-align: center;
+		font-family: 'Nunito Sans';
+		color: rgba(139, 0, 0, 1);
+		padding-top: 10px;
+		font-size: 14px;
+		font-weight: normal;
+	}
+}
+
+
+/* USING MEDIA QUERIES FOR TABLET*/
+@media only screen and (min-width:768px) and (max-width:991px) {
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	body {
+		background-color: rgba(254, 215, 186, 1);
+		position: relative;
+	}
+
+	nav {
+		height: 10vh;
+		display: flex;
+		width: 100%;
+	}
+
+	nav li {
+		padding-top: 10px;
+		padding-left: 20px;
+		margin: 4px 6px;
+		list-style: none;
+		font-size: 14px;
+	}
+
+	nav a {
+		text-decoration: none;
+		font-weight: bold;
+		color: black;
+		font-family: 'Poppins';
+		transition: all 1s ease-in;
+	}
+
+	nav a:hover {
+		cursor: pointer;
+		color: grey;
+	}
+
+	nav .img1 {
+		position: absolute;
+		left: 42%;
+		width: 180px;
+		height: 30px;
+		padding-top: 8px;
+	}
+
+	nav .right {
+		position: absolute;
+		right: 4.3%;
+		width: 10%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 5px;
+		gap: 2vw;
+	}
+
+	nav .right img {
+		width: 18px;
+		height: 18px;
+	}
+
+	nav .right .cart {
+		margin-top: 9px;
+	}
+
+	nav .right h3 {
+		border-radius: 100%;
+		background-color: brown;
+		width: 30px;
+		height: 30px;
+		padding: 1px 3px;
+		text-align: center;
+		font-family: 'Poppins';
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.container2 {
+		height: 220vh;
+		padding: 20px 1.2vw;
+	}
+
+	.container2 .images1 {
+		padding: 10px 0px;
+	}
+
+	.container2 .img {
+		display: flex;
+		justify-content: space-between;
+		gap: 10px;
+		margin-bottom: 30px;
+	}
+
+	.container2 .img .imgg {
+		height: 150px;
+		width: 150px;
+		border: none;
+		background-color: rgba(217, 217, 217, 1);
+		padding: 20px 8px;
+		padding-bottom: 40px;
+	}
+
+	.container2 .img img {
+		height: 148px;
+		width: 148px;
+		margin-left: 0px;
+	}
+
+	.container2 .img p {
+		text-align: center;
+		font-family: 'Poppins';
+		color: rgba(75, 4, 166, 1);
+		margin: 10px 20px;
+		font-size: 12px;
+	}
+
+	.container2 .card {
+		width: 45vw;
+		height: 190px;
+		border: none;
+		background-color: rgba(214, 203, 203, 1);
+		padding: 10px 0px;
+		border-radius: 25px;
+	}
+
+	.container2 .card .img2 {
+		position: absolute;
+		width: 45vw;
+		height: 212px;
+		position: relative;
+		bottom: 5.8%;
+		right: 0%;
+		overflow: hidden;
+		border-radius: 24px;
+	}
+
+	.container3 {
+		height: 55vh;
+		background-color: rgba(217, 217, 217, 1);
+	}
+
+	.container3 .details {
+		display: flex;
+		padding: 10px 20px;
+		justify-content: space-around;
+	}
+
+	.container3 .details h3 {
+		color: rgba(139, 0, 0, 1);
+		font-weight: bold;
+		font-family: 'Nunito Sans';
+		margin: 10px 6px;
+		font-size: 15px;
+	}
+
+	.container3 .details p {
+		font-family: 'Nunito Sans';
+		padding: 2px;
+		font-size: 12px;
+	}
+
+	.container3 .details a {
+		text-decoration: none;
+		color: black
+	}
+
+	.container3 .details .img {
+		display: flex;
+		gap: 8px;
+		margin-top: 8px;
+	}
+
+	.container3 .details img {
+		width: 16px;
+		height: 16px;
+		margin-top: 5px;
+	}
+
+	.container3 .logos {
+		display: flex;
+		justify-content: center;
+		gap: 22px;
+		position: absolute;
+		bottom: 3%;
+		width: 100vw;
+	}
+
+	.container3 .logos img {
+		width: 18px;
+		height: 18px;
+	}
+
+	.container3 .logos h3 {
+		color: rgba(139, 0, 0, 1);
+		font-family: 'Nunito Sans';
+		font-size: 16px;
+	}
+
+	.container4 {
+		height: 8vh;
+	}
+
+	.container4 h4 {
+		text-align: center;
+		font-family: 'Nunito Sans';
+		color: rgba(139, 0, 0, 1);
+		padding-top: 10px;
+		font-size: 14px;
+		font-weight: normal;
+	}
+}

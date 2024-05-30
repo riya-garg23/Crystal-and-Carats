@@ -1,0 +1,105 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: white;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+}
+
+.container .left {
+	width: 30%;
+	background-image: url("signup1.png");
+	background-size: 100% 100%;
+}
+
+.container .right {
+	width: 70%;
+}
+
+.container .right nav {
+	display: flex;
+	margin: 30px;
+	justify-content: center;
+	gap: 10px;
+	font-family: 'Nunito Sans';
+	color: rgba(210, 127, 127, 1);
+	border-bottom: 1px solid rgba(132, 41, 43, 1);
+	padding: 15px 60px;
+}
+
+.container .right nav img {
+	height: 20px;
+	width: 20px;
+}
+
+.container .right .details p {
+	color: rgba(210, 127, 127, 1);
+	font-size: 18px;
+	font-family: 'Nunito Sans';
+	text-align: center;
+}
+
+
+.container .right .details div {
+	margin: 30px 22px;
+	text-align: center;
+}
+
+.container .right .details input {
+	border: 1px solid rgba(132, 41, 43, 1);
+	width: 10%;
+	padding: 12px 10px;
+	margin: 16px 10px;
+}
+
+.container .right .details button {
+	margin: 0px 14vw;
+	margin-top: 30px;
+	background: rgba(210, 127, 127, 1);
+	padding: 10px;
+	width: 60%;
+	border: none;
+	font-family: 'Nunito Sans';
+	font-size: 18px;
+}
+
+.container .right .details button a {
+	color: white;
+	text-decoration: none;
+}
+
+.container .right .details h4 {
+	text-align: center;
+	font-family: 'Nunito Sans';
+	margin: 20px 30px;
+	font-weight: normal;
+}
+
+.container .right .details h4 a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.container .right .details h5 {
+	text-align: center;
+	font-family: 'Nunito Sans';
+}
+
+.container .right .details h5 a {
+	font-size: 14px;
+	text-decoration: none;
+	color: black;
+}
+
+.container .right .details h5 a img {
+	height: 12px;
+	width: 15px;
+	margin-right: 5px;
+}

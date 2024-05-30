@@ -1,0 +1,91 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: rgb(228, 176, 176);
+	width: 100vw;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+}
+
+.container .left {
+	width: 35%;
+	background-image: url("signup1.png");
+	background-size: 100% 100%;
+}
+
+.container .right {
+	width: 65%;
+}
+
+.container .right nav {
+	display: flex;
+	margin: 6px;
+	margin-bottom: 10px;
+	justify-content: space-around;
+	font-family: 'Nunito Sans';
+	color: rgba(210, 127, 127, 1);
+	border-bottom: 1px solid white;
+	padding: 10px 30px;
+}
+
+.container .right nav .signup {
+	border-bottom: 4px solid rgba(139, 0, 0, 1)
+}
+
+.container .right .details p {
+	color: white;
+	font-size: 14.9px;
+	font-family: 'Nunito Sans';
+	margin-top: 4px;
+}
+
+.container .right .details form {
+	margin: 15px;
+	margin-bottom: 0px;
+}
+
+.container .right .details div {
+	margin: 20px;
+	margin-bottom: 10px;
+}
+
+.container .right .details input {
+	border: none;
+	background-color: rgb(228, 176, 176);
+	border-bottom: 2px solid white;
+	width: 90%;
+}
+
+.container .right .details input[type="checkbox"] {
+	width: auto;
+	margin-right: 10px;
+	margin-top: 8px;
+}
+
+.container .right .details button {
+	color: white;
+	margin: 0px 10vw;
+	text-align: center;
+	margin-top: 10px;
+	background: rgb(196, 109, 109);
+	padding: 8px;
+	width: 60%;
+	border: none;
+	font-family: 'Nunito Sans';
+	font-size: 15px;
+}
+
+.container .right .details h5 {
+	text-align: center;
+	font-family: 'Nunito Sans';
+}
+
+.container .right .details h5 a {
+	color: rgba(139, 0, 0, 1);
+}
